@@ -13,6 +13,10 @@ Rails.application.routes.draw do
 
   get 'tweets/_form'
 
+  get "profiles/:id" => "profiles#show", as: :profile
+
+  get "profiles" => "profiles#index"
+
   devise_for :users
 
   resources :tweets
