@@ -64,6 +64,6 @@ private
     params.require(:tweet).permit(:message, :user_id)
  end
 
-end
+
 
 
