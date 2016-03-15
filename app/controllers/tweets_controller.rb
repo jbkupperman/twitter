@@ -5,8 +5,6 @@ class TweetsController < ApplicationController
 
 
   # actions (and other controller code) below
-  end
-
   def index
     @tweets = Tweet.all
   end
@@ -63,7 +61,4 @@ private
  def tweet_params
     params.require(:tweet).permit(:message, :user_id)
  end
-
-
-
-
+end

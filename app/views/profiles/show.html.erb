@@ -4,3 +4,5 @@
   <%= tweet.message %> <br />
 
 <% end %>
+
+<%= link_to "Follow", relationships_path(:friend_id => @user), method: :post %>
